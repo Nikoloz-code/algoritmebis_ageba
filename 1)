@@ -1,0 +1,13 @@
+# ფსევდოკოდი
+
+```
+GREEDY-ACTIVITY-SELECTOR(s, f) :
+  n = len(s);
+  A = {1};
+  j = 1;
+  for i=2; i<=n; i++ :
+    if s[i] >= f[j] :
+      A = A ∪ {i};
+      j = i;
+  return A;
+```
